@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PI ",
+    "TT ",
+    "TT "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:feather"
+    },
+    "I": {
+      "item": "minecraft:ink_sac"
+    },
+    "T": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "fantasticpets:scribe_desk",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    " C ",
+    " W "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:red_dye"
+    },
+    "W": {
+      "item": "fantasticpets:melted_wax"
+    }
+  },
+  "result": {
+    "item": "fantasticpets:wax_stamp",
+    "count": 1
+  }
+}

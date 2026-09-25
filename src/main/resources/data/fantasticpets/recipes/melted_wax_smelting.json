@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:honeycomb"
+  },
+  "result": "fantasticpets:melted_wax",
+  "experience": 0.2,
+  "cookingtime": 200
+}

@@ -84,6 +84,10 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+
+            // ADICIONA ESTAS DUAS LINHAS: Permitem que os Mixins do GeckoLib sejam mapeados corretamente
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         server {
@@ -137,6 +141,9 @@ dependencies {
 
     // Adicione esta linha para o GeckoLib 1.20.1:
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20.1:4.4.4")
+
+    // ADICIONA ESTA LINHA: Processador de Mixins necessário para o GeckoLib funcionar no ambiente de testes
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
