@@ -1,0 +1,45 @@
+# ==============================================================================
+# CONFIGURAÇÃO GERAL DO CARREGADOR DE MODS
+# ==============================================================================
+# Define qual é o carregador usado (Forge)
+modLoader="javafml"
+# Define a versão mínima do carregador
+loaderVersion="[47,)"
+# Licença do teu código
+license="All rights reserved"
+
+# ==============================================================================
+# IDENTIDADE DO TEU MOD (Fantastic Pets)
+# ==============================================================================
+[[mods]]
+# modId: O identificador único do teu mod. DEVE ser letras minúsculas, sem espaços.
+modId="fantasticpets"
+# version: A versão atual do projeto.
+version="1.0.0"
+# displayName: O nome formatado que aparece no menu do jogo para os jogadores.
+displayName="Fantastic Pets"
+# authors: O teu nome ou nick.
+authors="JhonSWolf"
+# description: O texto que explica o que o mod faz (podes usar várias linhas entre as aspas triplas).
+description='''
+A mod that adds messenger owls, nesting systems, and other fantastic creatures to Minecraft!
+'''
+
+# ==============================================================================
+# DEPENDÊNCIAS DO MOD
+# ==============================================================================
+# 1. Diz ao jogo que o Forge é obrigatório
+[[dependencies.fantasticpets]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.20,)"
+ordering="NONE"
+side="BOTH"
+
+# 2. Diz ao jogo que a versão do Minecraft obrigatória é a 1.20.1
+[[dependencies.fantasticpets]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
