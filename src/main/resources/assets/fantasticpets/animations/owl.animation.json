@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"fly": {
+			"loop": true,
+			"anim_time_update": "1.0",
+			"animation_length": 1,
+			"bones": {
+				"left_wing": {
+					"rotation": {
+						"0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 47]
+						},
+						"1": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"right_wing": {
+					"rotation": {
+						"0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, -47.5]
+						},
+						"1": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

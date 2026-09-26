@@ -1,6 +1,8 @@
 package com.jhonswolf.fantasticpets.event;
 
 import com.jhonswolf.fantasticpets.FantasticPets;
+import com.jhonswolf.fantasticpets.entity.ModEntities;
+import com.jhonswolf.fantasticpets.entity.client.OwlRenderer;
 import com.jhonswolf.fantasticpets.screen.ModMenuTypes;
 import com.jhonswolf.fantasticpets.screen.ScribeDeskScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -19,4 +21,10 @@ public class ClientModEvents {
         // Liga o ScribeDeskMenu (Lógica) ao ScribeDeskScreen (Visual)
         MenuScreens.register(ModMenuTypes.SCRIBE_DESK_MENU.get(), ScribeDeskScreen::new);
     }
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.OWL.get(),OwlRenderer::new);
+    }
+
 }

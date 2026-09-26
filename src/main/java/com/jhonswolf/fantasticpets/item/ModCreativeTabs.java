@@ -30,7 +30,7 @@ public class ModCreativeTabs {
                         pOutput.accept(com.jhonswolf.fantasticpets.block.ModBlocks.SCRIBE_DESK.get());
 
                         // Adiciona todos os nossos itens na aba do jogador
-               //         pOutput.accept(ModItems.SCROLL.get());
+                        pOutput.accept(ModItems.OWL_EGG.get());
                         pOutput.accept(ModItems.MELTED_WAX.get());
                         pOutput.accept(ModItems.WAX_STAMP.get());
                         pOutput.accept(ModItems.SEALED_SCROLL.get());

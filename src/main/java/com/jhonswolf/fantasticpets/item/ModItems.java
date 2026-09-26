@@ -14,10 +14,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FantasticPets.MOD_ID);
 
-    // Registra o Pergaminho (Feito com papel e linha)
-  //  public static final RegistryObject<Item> SCROLL = ITEMS.register("scroll",
-     //       () -> new Item(new Item.Properties()));
-
     // Registra a Cera Derretida (Feita na fornalha com favo de mel)
     public static final RegistryObject<Item> MELTED_WAX = ITEMS.register("melted_wax",
             () -> new Item(new Item.Properties()));
@@ -34,6 +30,10 @@ public class ModItems {
     // Registra o Pergaminho Aberto usando a nova classe (mantendo o limite de stack de 1)
     public static final RegistryObject<Item> OPENED_SCROLL = ITEMS.register("opened_scroll",
             () -> new com.jhonswolf.fantasticpets.item.custom.OpenedScrollItem(new Item.Properties().stacksTo(1)));
+
+    // Ovo de Coruja (resultado da reprodução)
+    public static final RegistryObject<Item> OWL_EGG = ITEMS.register("owl_egg",
+            () -> new Item(new Item.Properties()));
 
     // Registra a lista de itens no Event Bus principal
     public static void register(IEventBus eventBus) {
